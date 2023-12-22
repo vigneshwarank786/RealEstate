@@ -1,0 +1,283 @@
+/* Resetting defaults and setting up basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.top {
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.top .social a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 10px;
+}
+
+.top .social a:hover {
+  color: #007bff;
+}
+
+.top .num {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #ff0410;
+}
+
+.cta .nav-link {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.cta .nav-link:hover {
+  background-color: #007bff;
+  color: #ff0000;
+}
+
+/**************Home*************/
+/* Add these styles to your stylesheet */
+
+/* Slider section */
+.home-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-item {
+  width: 100%;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-size: cover;
+  position: relative;
+}
+
+.slider-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content inside each slide */
+.slider-item .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.slider-item h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+
+/******************Search Field*********************/
+/* Search form styles with professional colors */
+
+/* Section */
+.ftco-search {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+/* Heading */
+.ftco-search .heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Form styling */
+.search-property {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-field .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #aaa;
+}
+
+.form-field input[type="text"],
+.form-field select {
+  width: 100%;
+  padding: 10px 35px 10px 35px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-field input[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-field input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Registration form */
+.Rform {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #2f2f30;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Rform h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.links {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.custom-file-input {
+  width: 100%;
+  padding: 7px;
+  cursor: pointer;
+}
+
+/***************Loader Code**/
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-icon {
+  width: 100px; /* Adjust the size of the home icon */
+  height: 100px; /* Adjust the size of the home icon */
+  background-image: url('../public//images//house-color-icon.svg'); /* Replace with your home icon */
+  background-size: cover;
+  animation: rotateHome 2s linear infinite; /* Use keyframe animation 'rotateHome' */
+}
+
+@keyframes rotateHome {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

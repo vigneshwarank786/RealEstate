@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/***************Home***********/
+/* Styles for the home slider section */
+.home-slider {
+  position: relative;
+}
+
+.slider-item {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 100px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+}
+
+.slider-item .text {
+  max-width: 50%;
+}
+
+.slider-item h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+
+
+/*****************Footer****************/
+/* General styles */
+.ftco-footer {
+  color: #fff;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.949); /* Adjust the transparency as needed */
+}
+
+.ftco-footer-widget h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.ftco-footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.ftco-footer a {
+  color: #fff;
+}
+
+/* Social icons */
+.ftco-footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ftco-footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ftco-footer-social li:last-child {
+  margin-right: 0;
+}
+
+.ftco-footer-social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.ftco-footer-social li a:hover {
+  background-color: #fff;
+  color: #2c3e50; /* Text color on hover */
+}
+
+/* Columns */
+.ftco-footer-widget ul {
+  padding: 0;
+  list-style: none;
+}
+
+.ftco-footer-widget ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact info */
+.block-23 ul {
+  padding: 0;
+  list-style: none;
+}
+
+.block-23 ul li {
+  margin-bottom: 10px;
+}
+
+.block-23 ul li .icon {
+  display: inline-block;
+  width: 40px;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff; /* Icon color */
+}
+
+/* Footer bottom */
+.ftco-footer p:last-child {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
+}
